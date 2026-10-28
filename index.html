@@ -4,145 +4,160 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Couture Garden Collective</title>
-<meta name="description" content="Couture Garden Collective is a small urban farm in South Chicagoland, IL, growing the botanicals behind our handmade soaps, rosewater mist, whipped shea butter, and botanical candles." />
+<meta name="description" content="Couture Garden Collective is a small urban farm in South Chicagoland, IL, growing the botanicals behind our handmade soaps, rosewater mist, whipped shea butter, and botanical candles. Where wellness takes root." />
 <meta property="og:title" content="Couture Garden Collective" />
-<meta property="og:description" content="Grown in the garden. Made by hand. Botanical body care from South Chicagoland." />
+<meta property="og:description" content="Where Wellness Takes Root. Garden-grown botanical body care from South Chicagoland." />
+<meta property="og:image" content="https://cgc-website-omega.vercel.app/images/cgc-logo.png" />
 <meta property="og:url" content="https://cgc-website-omega.vercel.app" />
-<meta name="theme-color" content="#2F4A3A" />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%232F4A3A'/%3E%3Cpath d='M32 50 C32 36 32 28 32 20 M32 34 C24 34 18 28 18 20 C26 20 32 26 32 34 M32 30 C40 30 46 24 46 16 C38 16 32 22 32 30' stroke='%23F3D3CF' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" />
+<meta name="theme-color" content="#3D4335" />
+<link rel="icon" type="image/png" href="images/cgc-monogram.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,500&family=Cormorant+SC:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --moss:#2F4A3A;
-    --moss-deep:#1E3127;
-    --sage:#8FA98A;
-    --sage-soft:#E6EDE2;
-    --blush:#F3D3CF;
-    --rose:#C9757A;
-    --cream:#FBF7F0;
-    --sand:#EFE6D8;
-    --ink:#24302A;
-    --muted:#5E6B63;
-    --gold:#B8955A;
+    --parchment:#F8F3EA;
+    --ivory:#FFFDF8;
+    --gold:#A9824C;
+    --gold-light:#C9A86A;
+    --blush:#EFD9D2;
+    --rose:#C4918A;
+    --sage:#8E9B80;
+    --sage-soft:#E7EBE0;
+    --lavender:#9C8FB3;
+    --ink:#3B3428;
+    --muted:#6E665A;
+    --olive:#3D4335;
+    --olive-deep:#2D3228;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
-  body{font-family:'Jost',sans-serif;color:var(--ink);background:var(--cream);line-height:1.65;font-weight:400;overflow-x:hidden}
-  h1,h2,h3,.serif{font-family:'Cormorant Garamond',serif;font-weight:600;letter-spacing:-.3px;line-height:1.1}
+  body{font-family:'Jost',sans-serif;color:var(--ink);background:var(--parchment);line-height:1.7;font-weight:300;overflow-x:hidden}
+  h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:600;line-height:1.12;letter-spacing:-.2px;color:var(--ink)}
   a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
   .wrap{max-width:1160px;margin:0 auto;padding:0 28px}
-  .eyebrow{font-size:12px;letter-spacing:4px;text-transform:uppercase;font-weight:500;color:var(--rose)}
-  .btn{display:inline-block;padding:14px 30px;border-radius:999px;font-size:13px;font-weight:500;letter-spacing:2px;text-transform:uppercase;transition:transform .2s ease,background .2s ease,color .2s ease}
+  .sc{font-family:'Cormorant SC',serif;font-weight:600;letter-spacing:4px}
+  .eyebrow{font-family:'Cormorant SC',serif;font-size:16px;font-weight:600;letter-spacing:5px;color:var(--gold)}
+  .script{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--sage)}
+
+  /* ornamental divider, echoes the logo rule */
+  .rule{display:flex;align-items:center;gap:14px;color:var(--gold-light);margin:18px 0}
+  .rule::before,.rule::after{content:"";height:1px;background:currentColor;flex:1;max-width:120px}
+  .rule span{width:8px;height:8px;transform:rotate(45deg);border:1px solid currentColor}
+  .center .rule{justify-content:center}
+
+  .btn{display:inline-block;padding:14px 32px;border-radius:2px;font-family:'Cormorant SC',serif;font-weight:600;font-size:15px;letter-spacing:3px;transition:background .2s ease,color .2s ease,transform .2s ease}
   .btn:hover{transform:translateY(-2px)}
-  .btn-solid{background:var(--moss);color:var(--cream)}
-  .btn-solid:hover{background:var(--moss-deep)}
-  .btn-line{border:1.5px solid var(--moss);color:var(--moss)}
-  .btn-line:hover{background:var(--moss);color:var(--cream)}
-  .btn-blush{background:var(--blush);color:var(--moss-deep)}
+  .btn-gold{background:var(--gold);color:var(--ivory)}
+  .btn-gold:hover{background:#8F6C3C}
+  .btn-line{border:1px solid var(--gold);color:var(--gold)}
+  .btn-line:hover{background:var(--gold);color:var(--ivory)}
+  .btn-blush{background:var(--blush);color:var(--olive-deep)}
 
   /* NAV */
-  nav{position:sticky;top:0;z-index:20;background:rgba(251,247,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(47,74,58,.08)}
-  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+  nav{position:sticky;top:0;z-index:20;background:rgba(248,243,234,.94);backdrop-filter:blur(8px);border-bottom:1px solid rgba(169,130,76,.25)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
   .brand{display:flex;align-items:center;gap:12px}
-  .brand-mark{width:40px;height:40px;flex:none}
-  .brand-name{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--moss);line-height:1}
-  .brand-name small{display:block;font-family:'Jost',sans-serif;font-size:10px;letter-spacing:3.5px;text-transform:uppercase;font-weight:500;color:var(--sage);margin-top:3px}
-  nav ul{display:flex;gap:30px;list-style:none;font-size:14px;letter-spacing:.5px}
-  nav ul a:hover{color:var(--rose)}
-  .nav-shop{padding:10px 22px;font-size:12px}
-  @media(max-width:860px){nav ul{display:none}}
+  .brand img{height:44px;width:auto}
+  .brand-name{font-family:'Cormorant SC',serif;font-size:19px;font-weight:600;letter-spacing:3px;color:var(--gold);line-height:1.05}
+  .brand-name small{display:block;font-size:11px;letter-spacing:5px;color:var(--muted)}
+  nav ul{display:flex;gap:32px;list-style:none;font-family:'Cormorant SC',serif;font-size:16px;letter-spacing:2px;font-weight:500}
+  nav ul a:hover{color:var(--gold)}
+  .nav-shop{padding:10px 22px;font-size:13px}
+  @media(max-width:880px){nav ul{display:none}}
 
   /* HERO */
-  .hero{position:relative;padding:96px 0 120px;overflow:hidden}
-  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
-  .hero h1{font-size:clamp(46px,6.4vw,82px);color:var(--moss-deep);margin:18px 0 22px}
-  .hero h1 em{font-style:italic;color:var(--rose)}
-  .hero p.lede{font-size:18px;color:var(--muted);max-width:520px;margin-bottom:34px;font-weight:300}
+  .hero{padding:70px 0 90px;background:radial-gradient(ellipse at 80% 40%,rgba(239,217,210,.7),transparent 60%),radial-gradient(ellipse at 10% 90%,rgba(231,235,224,.9),transparent 55%)}
+  .hero .wrap{display:grid;grid-template-columns:1fr 1.05fr;gap:40px;align-items:center}
+  .hero h1{font-size:clamp(46px,6vw,78px);margin:14px 0 8px}
+  .hero h1 em{font-style:italic;font-weight:500;color:var(--rose)}
+  .hero .tag{font-size:26px;margin-bottom:22px}
+  .hero p.lede{font-size:18px;color:var(--muted);max-width:500px;margin-bottom:34px}
   .hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
-  .hero-art{position:relative;aspect-ratio:1/1.08;border-radius:220px 220px 28px 28px;background:linear-gradient(170deg,var(--sage-soft) 0%,var(--blush) 100%);display:flex;align-items:flex-end;justify-content:center;overflow:hidden}
-  .hero-art svg{width:92%;height:auto}
-  .hero-tag{position:absolute;left:-18px;bottom:46px;background:var(--cream);padding:14px 20px;border-radius:16px;box-shadow:0 14px 34px rgba(30,49,39,.14);font-size:13px;line-height:1.4}
-  .hero-tag strong{display:block;font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--moss)}
-  @media(max-width:860px){.hero{padding:56px 0 80px}.hero .wrap{grid-template-columns:1fr}.hero-art{max-width:420px;margin:0 auto}.hero-tag{left:8px}}
+  .crest{position:relative}
+  .crest img{width:100%;max-width:560px;margin:0 auto;filter:drop-shadow(0 18px 30px rgba(59,52,40,.08))}
+  @media(max-width:880px){.hero .wrap{grid-template-columns:1fr}.crest{order:-1}.crest img{max-width:420px}}
 
   /* RIBBON */
-  .ribbon{background:var(--moss);color:var(--cream);padding:18px 0;overflow:hidden;white-space:nowrap}
-  .ribbon-track{display:inline-flex;gap:44px;animation:scroll 38s linear infinite;font-family:'Cormorant Garamond',serif;font-size:22px;font-style:italic}
-  .ribbon-track span::after{content:"\2740";font-style:normal;margin-left:44px;color:var(--blush);font-size:16px}
+  .ribbon{background:var(--olive);color:var(--parchment);padding:16px 0;overflow:hidden;white-space:nowrap;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold)}
+  .ribbon-track{display:inline-flex;gap:40px;animation:scroll 40s linear infinite;font-family:'Cormorant Garamond',serif;font-size:22px;font-style:italic}
+  .ribbon-track span::after{content:"\2766";font-style:normal;margin-left:40px;color:var(--gold-light);font-size:18px}
   @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
   @media (prefers-reduced-motion:reduce){.ribbon-track{animation:none}}
 
   section{padding:104px 0}
-  .head{max-width:640px;margin-bottom:52px}
-  .head h2{font-size:clamp(36px,4.6vw,54px);color:var(--moss-deep);margin-top:12px}
-  .head p{color:var(--muted);margin-top:14px;font-size:17px;font-weight:300}
+  .head{max-width:660px;margin-bottom:52px}
+  .head h2{font-size:clamp(36px,4.6vw,54px)}
+  .head p{color:var(--muted);font-size:17px}
   .center{text-align:center;margin-left:auto;margin-right:auto}
 
   /* STORY */
   .story .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:center}
-  .story-card{background:var(--sand);border-radius:28px;padding:44px;position:relative}
-  .story-card .big{font-family:'Cormorant Garamond',serif;font-size:96px;line-height:1;color:var(--moss)}
-  .story-card .lab{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
-  .stats{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:30px;padding-top:28px;border-top:1px solid rgba(47,74,58,.15)}
-  .stats .n{font-family:'Cormorant Garamond',serif;font-size:42px;color:var(--rose);line-height:1}
-  .story-text p{font-size:17px;color:var(--muted);margin-bottom:18px;font-weight:300}
+  .story-card{background:var(--ivory);border:1px solid rgba(169,130,76,.3);outline:1px solid rgba(169,130,76,.18);outline-offset:-12px;padding:50px 44px;text-align:center}
+  .story-card .lab{font-family:'Cormorant SC',serif;font-size:14px;letter-spacing:3px;color:var(--muted)}
+  .story-card .big{font-family:'Cormorant Garamond',serif;font-size:100px;line-height:1;color:var(--gold);margin:6px 0}
+  .stats{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:22px;padding-top:26px;border-top:1px solid rgba(169,130,76,.25)}
+  .stats .n{font-family:'Cormorant Garamond',serif;font-size:44px;color:var(--rose);line-height:1}
+  .story-text p{font-size:17px;color:var(--muted);margin-bottom:18px}
   .story-text p strong{color:var(--ink);font-weight:500}
-  @media(max-width:860px){.story .wrap{grid-template-columns:1fr;gap:40px}}
+  @media(max-width:880px){.story .wrap{grid-template-columns:1fr;gap:40px}}
 
   /* PRODUCTS */
   .products{background:var(--sage-soft)}
   .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
-  .card{background:var(--cream);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s ease,box-shadow .25s ease}
-  .card:hover{transform:translateY(-6px);box-shadow:0 22px 44px rgba(30,49,39,.12)}
-  .swatch{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center}
-  .swatch svg{width:58%}
-  .card .body{padding:22px 22px 26px}
-  .card .kind{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--sage);font-weight:500}
-  .card h3{font-size:28px;color:var(--moss-deep);margin:6px 0 8px}
-  .card p{font-size:14.5px;color:var(--muted);font-weight:300}
-  .sw-unbothered{background:#DCE7D6}.sw-bloom{background:#F6DCD8}.sw-rooted{background:#E9DCC7}.sw-sacred{background:#D9D2C4}
+  .card{background:var(--ivory);border:1px solid rgba(169,130,76,.22);display:flex;flex-direction:column;transition:transform .25s ease,box-shadow .25s ease}
+  .card:hover{transform:translateY(-6px);box-shadow:0 22px 44px rgba(59,52,40,.1)}
+  .swatch{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;border-bottom:1px solid rgba(169,130,76,.18)}
+  .swatch svg{width:56%}
+  .card .body{padding:22px 22px 26px;text-align:center}
+  .card .kind{font-family:'Cormorant SC',serif;font-size:13px;letter-spacing:3px;color:var(--gold)}
+  .card h3{font-size:28px;margin:4px 0 8px}
+  .card p{font-size:14.5px;color:var(--muted)}
+  .sw-unbothered{background:#E3E8DB}.sw-bloom{background:#F3E1DB}.sw-rooted{background:#EDE3D3}.sw-sacred{background:#E6DFD6}
   .more{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:22px}
   .more .card{flex-direction:row;align-items:center}
-  .more .swatch{width:120px;flex:none}
+  .more .swatch{width:120px;align-self:stretch;flex:none;aspect-ratio:auto;border-bottom:0;border-right:1px solid rgba(169,130,76,.18)}
   .more .swatch svg{width:62%}
+  .more .card .body{text-align:left}
   .shop-cta{text-align:center;margin-top:52px}
   @media(max-width:960px){.grid{grid-template-columns:repeat(2,1fr)}.more{grid-template-columns:1fr}}
   @media(max-width:520px){.grid{grid-template-columns:1fr}}
 
   /* GARDEN */
   .garden .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-  .bed{border:1px solid rgba(47,74,58,.14);border-radius:24px;padding:34px 30px;background:#fff}
-  .bed .ico{width:52px;height:52px;border-radius:50%;background:var(--blush);display:flex;align-items:center;justify-content:center;margin-bottom:20px}
-  .bed h3{font-size:30px;color:var(--moss-deep);margin-bottom:10px}
-  .bed p{color:var(--muted);font-weight:300;font-size:15.5px}
-  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
-  .chips span{font-size:12px;padding:6px 12px;border-radius:999px;background:var(--sage-soft);color:var(--moss)}
   .garden .head{grid-column:1/-1}
-  @media(max-width:860px){.garden .wrap{grid-template-columns:1fr}}
+  .bed{border:1px solid rgba(169,130,76,.28);padding:36px 30px;background:var(--ivory);text-align:center}
+  .bed .ico{width:56px;height:56px;border-radius:50%;border:1px solid var(--gold-light);display:flex;align-items:center;justify-content:center;margin:0 auto 18px;background:var(--parchment)}
+  .bed h3{font-size:30px;margin-bottom:10px}
+  .bed p{color:var(--muted);font-size:15.5px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;justify-content:center}
+  .chips span{font-size:13px;padding:5px 12px;border-radius:999px;background:var(--sage-soft);color:#4E5A44}
+  @media(max-width:880px){.garden .wrap{grid-template-columns:1fr}}
 
   /* COMING */
-  .coming{background:var(--moss-deep);color:var(--cream);position:relative;overflow:hidden}
+  .coming{background:var(--olive);color:var(--parchment)}
   .coming .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
-  .coming h2{font-size:clamp(36px,4.6vw,54px)}
-  .coming h2 em{color:var(--blush)}
-  .coming p{color:rgba(251,247,240,.75);font-weight:300;font-size:17px;margin:16px 0 30px}
+  .coming h2{font-size:clamp(36px,4.6vw,54px);color:var(--parchment)}
+  .coming h2 em{color:var(--blush);font-weight:500}
+  .coming p{color:rgba(248,243,234,.75);font-size:17px;margin:0 0 30px}
+  .coming .rule{color:var(--gold-light)}
   .coming ul{list-style:none;display:grid;gap:14px}
-  .coming li{display:flex;gap:16px;align-items:center;background:rgba(251,247,240,.06);border:1px solid rgba(251,247,240,.12);border-radius:16px;padding:18px 22px}
+  .coming li{display:flex;gap:16px;align-items:center;border:1px solid rgba(201,168,106,.35);padding:18px 22px}
   .coming li b{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;display:block;line-height:1.1}
-  .coming li small{color:rgba(251,247,240,.65);font-size:13.5px}
-  .coming li .dot{width:12px;height:12px;border-radius:50%;background:var(--blush);flex:none}
-  @media(max-width:860px){.coming .wrap{grid-template-columns:1fr}}
+  .coming li small{color:rgba(248,243,234,.65);font-size:14px}
+  .coming li .dot{width:9px;height:9px;transform:rotate(45deg);background:var(--gold-light);flex:none}
+  @media(max-width:880px){.coming .wrap{grid-template-columns:1fr}}
 
-  /* FOLLOW */
   .follow{text-align:center}
-  .follow .socials{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+  .follow .mono{width:70px;margin:0 auto 10px}
+  .follow .socials{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:30px}
 
-  footer{background:var(--sand);padding:46px 0;font-size:14px;color:var(--muted)}
+  footer{background:var(--olive-deep);padding:40px 0;font-size:14px;color:rgba(248,243,234,.7)}
   footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-  footer a:hover{color:var(--rose)}
-  footer .links{display:flex;gap:22px}
+  footer .tagline{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:var(--gold-light)}
+  footer a:hover{color:var(--gold-light)}
+  footer .links{display:flex;gap:22px;font-family:'Cormorant SC',serif;letter-spacing:2px}
 </style>
 </head>
 <body>
@@ -150,7 +165,7 @@
 <nav>
   <div class="wrap">
     <a href="#top" class="brand" aria-label="Couture Garden Collective home">
-      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#2F4A3A"/><path d="M32 52 C32 38 32 28 32 18 M32 36 C23 36 17 29 17 20 C26 20 32 27 32 36 M32 31 C41 31 47 24 47 15 C38 15 32 22 32 31" stroke="#F3D3CF" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+      <img src="images/cgc-monogram.png" alt="" />
       <span class="brand-name">Couture Garden<small>Collective</small></span>
     </a>
     <ul>
@@ -159,7 +174,7 @@
       <li><a href="#garden">The Garden</a></li>
       <li><a href="#coming">Coming Soon</a></li>
     </ul>
-    <a href="https://www.etsy.com/shop/CoutureGardenCo" target="_blank" rel="noopener" class="btn btn-solid nav-shop">Shop on Etsy</a>
+    <a href="https://www.etsy.com/shop/CoutureGardenCo" target="_blank" rel="noopener" class="btn btn-gold nav-shop">Shop on Etsy</a>
   </div>
 </nav>
 
@@ -168,45 +183,14 @@
     <div>
       <span class="eyebrow">Urban Farm &middot; South Chicagoland, IL</span>
       <h1>Grown in the garden. <em>Made by hand.</em></h1>
+      <div class="tag script">Where Wellness Takes Root.</div>
       <p class="lede">Couture Garden Collective is a small urban farm growing the lavender, chamomile, roses, and herbs that become our handmade soaps, rosewater mist, whipped shea butter, and botanical candles.</p>
       <div class="ctas">
-        <a href="https://www.etsy.com/shop/CoutureGardenCo" target="_blank" rel="noopener" class="btn btn-solid">Shop the Collection</a>
+        <a href="https://www.etsy.com/shop/CoutureGardenCo" target="_blank" rel="noopener" class="btn btn-gold">Shop the Collection</a>
         <a href="#story" class="btn btn-line">Meet the Garden</a>
       </div>
     </div>
-    <div class="hero-art">
-      <svg viewBox="0 0 400 420" aria-hidden="true">
-        <g stroke-linecap="round" fill="none">
-          <!-- lavender stems -->
-          <g stroke="#2F4A3A" stroke-width="3">
-            <path d="M120 420 C118 340 112 280 104 200"/><path d="M160 420 C160 330 162 260 168 170"/><path d="M290 420 C292 340 298 270 310 190"/>
-          </g>
-          <g fill="#9B86C2">
-            <ellipse cx="104" cy="196" rx="7" ry="11"/><ellipse cx="99" cy="214" rx="7" ry="11"/><ellipse cx="110" cy="214" rx="7" ry="11"/><ellipse cx="102" cy="232" rx="6" ry="10"/><ellipse cx="112" cy="232" rx="6" ry="10"/><ellipse cx="104" cy="178" rx="6" ry="10"/>
-            <ellipse cx="168" cy="164" rx="7" ry="11"/><ellipse cx="163" cy="182" rx="7" ry="11"/><ellipse cx="174" cy="182" rx="7" ry="11"/><ellipse cx="166" cy="200" rx="6" ry="10"/><ellipse cx="176" cy="200" rx="6" ry="10"/><ellipse cx="168" cy="146" rx="6" ry="10"/>
-            <ellipse cx="310" cy="186" rx="7" ry="11"/><ellipse cx="305" cy="204" rx="7" ry="11"/><ellipse cx="316" cy="204" rx="7" ry="11"/><ellipse cx="308" cy="222" rx="6" ry="10"/><ellipse cx="318" cy="222" rx="6" ry="10"/><ellipse cx="310" cy="168" rx="6" ry="10"/>
-          </g>
-          <!-- rose -->
-          <path d="M232 420 C230 350 228 300 232 250" stroke="#2F4A3A" stroke-width="4"/>
-          <path d="M231 330 C210 322 200 306 204 290 C222 294 232 308 231 330" fill="#8FA98A"/>
-          <path d="M233 300 C254 292 262 276 258 260 C240 266 232 280 233 300" fill="#8FA98A"/>
-          <circle cx="232" cy="232" r="34" fill="#C9757A"/>
-          <path d="M214 232 C214 216 228 208 238 214 C248 220 246 236 234 240 C224 243 218 236 222 228 C226 222 234 224 234 230" stroke="#F3D3CF" stroke-width="3"/>
-          <!-- chamomile -->
-          <path d="M60 420 C62 370 58 330 50 296" stroke="#2F4A3A" stroke-width="3"/>
-          <g fill="#FBF7F0"><ellipse cx="50" cy="276" rx="5" ry="13"/><ellipse cx="50" cy="304" rx="5" ry="13"/><ellipse cx="36" cy="290" rx="13" ry="5"/><ellipse cx="64" cy="290" rx="13" ry="5"/><ellipse cx="40" cy="280" rx="5" ry="12" transform="rotate(-45 40 280)"/><ellipse cx="60" cy="300" rx="5" ry="12" transform="rotate(-45 60 300)"/><ellipse cx="60" cy="280" rx="5" ry="12" transform="rotate(45 60 280)"/><ellipse cx="40" cy="300" rx="5" ry="12" transform="rotate(45 40 300)"/></g>
-          <circle cx="50" cy="290" r="8" fill="#E7B84A"/>
-          <path d="M350 420 C350 380 352 350 356 320" stroke="#2F4A3A" stroke-width="3"/>
-          <g fill="#FBF7F0"><ellipse cx="356" cy="302" rx="4" ry="11"/><ellipse cx="356" cy="326" rx="4" ry="11"/><ellipse cx="344" cy="314" rx="11" ry="4"/><ellipse cx="368" cy="314" rx="11" ry="4"/></g>
-          <circle cx="356" cy="314" r="7" fill="#E7B84A"/>
-          <!-- leaves -->
-          <path d="M120 340 C96 334 84 318 86 300 C106 304 118 318 120 340" fill="#5F7F66"/>
-          <path d="M162 300 C186 292 196 274 192 256 C172 262 162 278 162 300" fill="#5F7F66"/>
-          <path d="M294 330 C272 322 262 306 266 288 C286 294 294 310 294 330" fill="#5F7F66"/>
-        </g>
-      </svg>
-      <div class="hero-tag"><strong>21 crops</strong>across 7 garden beds</div>
-    </div>
+    <div class="crest"><img src="images/cgc-logo.png" alt="Couture Garden Collective crest with roses, lavender, a hummingbird, and a gold CC monogram" /></div>
   </div>
 </header>
 
@@ -231,7 +215,8 @@
     </div>
     <div class="story-text">
       <span class="eyebrow">Our Story</span>
-      <div class="head" style="margin-bottom:24px"><h2>From backyard beds to your bath.</h2></div>
+      <div class="head" style="margin-bottom:0"><h2>From backyard beds to your bath.</h2></div>
+      <div class="rule"><span></span></div>
       <p>Couture Garden Collective started with a simple idea: <strong>the best ingredients are the ones you grow yourself.</strong> What began as handmade soap and bath products in 2020 has grown into a working urban farm in South Chicagoland.</p>
       <p>Today our raised beds hold lavender, chamomile, roses, echinacea, marigolds, and kitchen herbs. We harvest, dry, and infuse them right here, then pour them into small batches of soap, mist, butter, and candles.</p>
       <p>Every bar is cured, cut, and wrapped by hand. No shortcuts, no mass production, just plants, patience, and care.</p>
@@ -244,65 +229,67 @@
     <div class="head center">
       <span class="eyebrow">The Collection</span>
       <h2>Four soaps. Four moods.</h2>
+      <div class="rule"><span></span></div>
       <p>Our signature bars, each made in small batches with botanicals from the garden.</p>
     </div>
     <div class="grid">
       <div class="card">
-        <div class="swatch sw-unbothered"><svg viewBox="0 0 100 100" aria-hidden="true"><rect x="12" y="26" width="76" height="48" rx="12" fill="#8FA98A"/><path d="M50 36 C50 46 50 54 50 64 M50 52 C43 52 38 47 38 40 C45 40 50 45 50 52 M50 48 C57 48 62 43 62 36 C55 36 50 41 50 48" stroke="#FBF7F0" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg></div>
+        <div class="swatch sw-unbothered"><svg viewBox="0 0 100 100" aria-hidden="true"><rect x="12" y="26" width="76" height="48" rx="10" fill="#8E9B80"/><rect x="17" y="31" width="66" height="38" rx="7" fill="none" stroke="#C9A86A" stroke-width="1"/><path d="M50 36 C50 46 50 54 50 64 M50 52 C43 52 38 47 38 40 C45 40 50 45 50 52 M50 48 C57 48 62 43 62 36 C55 36 50 41 50 48" stroke="#FFFDF8" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg></div>
         <div class="body"><span class="kind">Soap Bar</span><h3>Unbothered</h3><p>Calm, cool, and collected. A soothing bar for slowing down at the end of the day.</p></div>
       </div>
       <div class="card">
-        <div class="swatch sw-bloom"><svg viewBox="0 0 100 100" aria-hidden="true"><rect x="12" y="26" width="76" height="48" rx="12" fill="#D9969A"/><circle cx="50" cy="50" r="12" fill="none" stroke="#FBF7F0" stroke-width="2.5"/><path d="M42 50 C42 44 48 41 52 44 C56 47 54 53 50 54 C47 55 45 52 47 49" stroke="#FBF7F0" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg></div>
+        <div class="swatch sw-bloom"><svg viewBox="0 0 100 100" aria-hidden="true"><rect x="12" y="26" width="76" height="48" rx="10" fill="#C4918A"/><rect x="17" y="31" width="66" height="38" rx="7" fill="none" stroke="#C9A86A" stroke-width="1"/><circle cx="50" cy="50" r="12" fill="none" stroke="#FFFDF8" stroke-width="2.2"/><path d="M42 50 C42 44 48 41 52 44 C56 47 54 53 50 54 C47 55 45 52 47 49" stroke="#FFFDF8" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg></div>
         <div class="body"><span class="kind">Soap Bar</span><h3>In Bloom</h3><p>Soft, floral, and fresh, inspired by the roses and blossoms in our garden.</p></div>
       </div>
       <div class="card">
-        <div class="swatch sw-rooted"><svg viewBox="0 0 100 100" aria-hidden="true"><rect x="12" y="26" width="76" height="48" rx="12" fill="#B79A72"/><path d="M50 34 L50 52 M50 52 C44 56 40 62 40 66 M50 52 C56 56 60 62 60 66 M50 56 L50 66" stroke="#FBF7F0" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg></div>
+        <div class="swatch sw-rooted"><svg viewBox="0 0 100 100" aria-hidden="true"><rect x="12" y="26" width="76" height="48" rx="10" fill="#B59A74"/><rect x="17" y="31" width="66" height="38" rx="7" fill="none" stroke="#FFFDF8" stroke-opacity=".5" stroke-width="1"/><path d="M50 34 L50 52 M50 52 C44 56 40 62 40 66 M50 52 C56 56 60 62 60 66 M50 56 L50 66" stroke="#FFFDF8" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg></div>
         <div class="body"><span class="kind">Soap Bar</span><h3>Rooted</h3><p>Earthy and grounding. A steady, everyday bar for feeling like yourself again.</p></div>
       </div>
       <div class="card">
-        <div class="swatch sw-sacred"><svg viewBox="0 0 100 100" aria-hidden="true"><rect x="12" y="26" width="76" height="48" rx="12" fill="#7E7466"/><path d="M50 36 L54 46 L64 50 L54 54 L50 64 L46 54 L36 50 L46 46 Z" fill="none" stroke="#FBF7F0" stroke-width="2.5" stroke-linejoin="round"/></svg></div>
+        <div class="swatch sw-sacred"><svg viewBox="0 0 100 100" aria-hidden="true"><rect x="12" y="26" width="76" height="48" rx="10" fill="#7D7263"/><rect x="17" y="31" width="66" height="38" rx="7" fill="none" stroke="#C9A86A" stroke-width="1"/><path d="M50 36 L54 46 L64 50 L54 54 L50 64 L46 54 L36 50 L46 46 Z" fill="none" stroke="#FFFDF8" stroke-width="2.2" stroke-linejoin="round"/></svg></div>
         <div class="body"><span class="kind">Soap Bar</span><h3>Sacred Ground</h3><p>Rich, warm, and meditative. Made for rituals, reset days, and quiet mornings.</p></div>
       </div>
     </div>
     <div class="more">
       <div class="card">
-        <div class="swatch sw-bloom"><svg viewBox="0 0 100 100" aria-hidden="true"><rect x="36" y="34" width="28" height="50" rx="8" fill="#D9969A"/><rect x="42" y="20" width="16" height="14" rx="3" fill="#2F4A3A"/><path d="M58 24 L72 24" stroke="#2F4A3A" stroke-width="4" stroke-linecap="round"/></svg></div>
+        <div class="swatch sw-bloom"><svg viewBox="0 0 100 100" aria-hidden="true"><rect x="36" y="34" width="28" height="50" rx="8" fill="#C4918A"/><rect x="42" y="20" width="16" height="14" rx="3" fill="#A9824C"/><path d="M58 24 L72 24" stroke="#A9824C" stroke-width="4" stroke-linecap="round"/></svg></div>
         <div class="body"><span class="kind">Face &amp; Body</span><h3>Rosewater Mist</h3><p>A light, refreshing spritz made from garden rose petals.</p></div>
       </div>
       <div class="card">
-        <div class="swatch sw-rooted"><svg viewBox="0 0 100 100" aria-hidden="true"><rect x="22" y="44" width="56" height="34" rx="10" fill="#B79A72"/><rect x="18" y="34" width="64" height="14" rx="6" fill="#2F4A3A"/><path d="M36 58 C42 52 50 64 58 56 C62 52 66 58 66 58" stroke="#FBF7F0" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg></div>
+        <div class="swatch sw-rooted"><svg viewBox="0 0 100 100" aria-hidden="true"><rect x="22" y="44" width="56" height="34" rx="10" fill="#B59A74"/><rect x="18" y="34" width="64" height="14" rx="6" fill="#A9824C"/><path d="M36 58 C42 52 50 64 58 56 C62 52 66 58 66 58" stroke="#FFFDF8" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg></div>
         <div class="body"><span class="kind">Body</span><h3>Whipped Shea Butter</h3><p>Rich, fluffy moisture for skin that needs a little extra love.</p></div>
       </div>
       <div class="card">
-        <div class="swatch sw-unbothered"><svg viewBox="0 0 100 100" aria-hidden="true"><rect x="28" y="40" width="44" height="44" rx="8" fill="#8FA98A"/><path d="M50 40 L50 30" stroke="#2F4A3A" stroke-width="3" stroke-linecap="round"/><path d="M50 14 C56 22 56 28 50 30 C44 28 44 22 50 14" fill="#E7B84A"/></svg></div>
+        <div class="swatch sw-unbothered"><svg viewBox="0 0 100 100" aria-hidden="true"><rect x="28" y="40" width="44" height="44" rx="8" fill="#8E9B80"/><path d="M50 40 L50 30" stroke="#3B3428" stroke-width="2.5" stroke-linecap="round"/><path d="M50 14 C56 22 56 28 50 30 C44 28 44 22 50 14" fill="#C9A86A"/></svg></div>
         <div class="body"><span class="kind">Home</span><h3>Botanical Candles</h3><p>Hand-poured candles finished with dried flowers and herbs.</p></div>
       </div>
     </div>
-    <div class="shop-cta"><a href="https://www.etsy.com/shop/CoutureGardenCo" target="_blank" rel="noopener" class="btn btn-solid">Shop CoutureGardenCo on Etsy</a></div>
+    <div class="shop-cta"><a href="https://www.etsy.com/shop/CoutureGardenCo" target="_blank" rel="noopener" class="btn btn-gold">Shop CoutureGardenCo on Etsy</a></div>
   </div>
 </section>
 
 <section class="garden" id="garden">
   <div class="wrap">
-    <div class="head">
+    <div class="head center">
       <span class="eyebrow">The Garden</span>
       <h2>What's growing at the Collective.</h2>
+      <div class="rule"><span></span></div>
       <p>Our beds are planted with purpose: some for the kitchen, some for the apothecary, and some just for the pollinators.</p>
     </div>
     <div class="bed">
-      <div class="ico"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><path d="M13 23 V9 M13 13 C9 13 6 10 6 6 C10 6 13 9 13 13 M13 11 C17 11 20 8 20 4 C16 4 13 7 13 11" stroke="#2F4A3A" stroke-width="2" fill="none" stroke-linecap="round"/></svg></div>
+      <div class="ico"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><path d="M13 23 V9 M13 13 C9 13 6 10 6 6 C10 6 13 9 13 13 M13 11 C17 11 20 8 20 4 C16 4 13 7 13 11" stroke="#A9824C" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg></div>
       <h3>The Botanical Beds</h3>
       <p>The heart of our body care line. Harvested, dried, and infused for soaps, oils, and mists.</p>
       <div class="chips"><span>Lavender</span><span>Chamomile</span><span>Roses</span><span>Echinacea</span><span>Black-eyed Susan</span></div>
     </div>
     <div class="bed">
-      <div class="ico"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="15" r="8" fill="none" stroke="#2F4A3A" stroke-width="2"/><path d="M13 7 C13 4 15 3 17 3" stroke="#2F4A3A" stroke-width="2" fill="none" stroke-linecap="round"/></svg></div>
+      <div class="ico"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="15" r="8" fill="none" stroke="#A9824C" stroke-width="1.6"/><path d="M13 7 C13 4 15 3 17 3" stroke="#A9824C" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg></div>
       <h3>Food &amp; Flowers</h3>
       <p>Summer favorites grown side by side with marigolds to keep the pests away naturally.</p>
       <div class="chips"><span>Tomatoes</span><span>Basil</span><span>Peppers</span><span>Cucumbers</span><span>Zucchini</span><span>Okra</span></div>
     </div>
     <div class="bed">
-      <div class="ico"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><path d="M13 3 L13 23 M5 9 C9 9 13 13 13 17 M21 9 C17 9 13 13 13 17" stroke="#2F4A3A" stroke-width="2" fill="none" stroke-linecap="round"/></svg></div>
+      <div class="ico"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><path d="M13 3 L13 23 M5 9 C9 9 13 13 13 17 M21 9 C17 9 13 13 13 17" stroke="#A9824C" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg></div>
       <h3>Fall &amp; Winter</h3>
       <p>Cool-season greens and brassicas that carry the garden through the colder months.</p>
       <div class="chips"><span>Kale</span><span>Collards</span><span>Broccoli</span><span>Brussels sprouts</span><span>Mustard greens</span></div>
@@ -313,8 +300,9 @@
 <section class="coming" id="coming">
   <div class="wrap">
     <div>
-      <span class="eyebrow" style="color:var(--blush)">Coming Soon</span>
-      <h2 style="margin-top:12px">Grow your own <em>garden, too.</em></h2>
+      <span class="eyebrow" style="color:var(--gold-light)">Coming Soon</span>
+      <h2 style="margin-top:10px">Grow your own <em>garden, too.</em></h2>
+      <div class="rule"><span></span></div>
       <p>We're turning what we've learned in our beds into simple digital guides for beginner gardeners, available as instant downloads on Etsy.</p>
       <a href="https://www.instagram.com/couturegardencollective" target="_blank" rel="noopener" class="btn btn-blush">Follow for Launch Updates</a>
     </div>
@@ -329,19 +317,20 @@
 
 <section class="follow">
   <div class="wrap">
+    <img class="mono" src="images/cgc-monogram.png" alt="" />
     <span class="eyebrow">Stay Connected</span>
-    <div class="head center" style="margin-bottom:0"><h2>Follow the garden as it grows.</h2><p>Harvest days, new batches, and behind-the-scenes from the Collective.</p></div>
+    <div class="head center" style="margin-bottom:0"><h2>Follow the garden as it grows.</h2><div class="rule"><span></span></div><p>Harvest days, new batches, and behind-the-scenes from the Collective.</p></div>
     <div class="socials">
       <a href="https://www.instagram.com/couturegardencollective" target="_blank" rel="noopener" class="btn btn-line">Instagram</a>
       <a href="https://www.facebook.com/share/1EANfrx4ZL/" target="_blank" rel="noopener" class="btn btn-line">Facebook</a>
-      <a href="https://www.etsy.com/shop/CoutureGardenCo" target="_blank" rel="noopener" class="btn btn-solid">Etsy Shop</a>
+      <a href="https://www.etsy.com/shop/CoutureGardenCo" target="_blank" rel="noopener" class="btn btn-gold">Etsy Shop</a>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <div>&copy; 2026 Couture Garden Collective &middot; South Chicagoland, IL</div>
+    <div><div class="tagline">Where Wellness Takes Root.</div>&copy; 2026 Couture Garden Collective &middot; South Chicagoland, IL</div>
     <div class="links"><a href="#story">Story</a><a href="#shop">Collection</a><a href="#garden">Garden</a><a href="https://www.etsy.com/shop/CoutureGardenCo" target="_blank" rel="noopener">Shop</a></div>
   </div>
 </footer>
